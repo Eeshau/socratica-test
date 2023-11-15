@@ -82,9 +82,9 @@
 		
 		<div class="container mx-auto max-w-screen-xl px-6 md:px-8">
 
-			<div class="flex flex-col items-center mb-8 relative lg:h-[250px] h-250 mt-0 md:mt-16">
+			<div class="flex flex-col items-center mb-8 relative lg:h-[250px]  mt-0 md:mt-16">
 				<button on:click={switchDoodle} class="absolute inset-0 opacity-0 cursor-pointer"></button>
-				<img id="socraticaLogo" src={currentDoodle.src} alt="Socratica Logo" class="h-full w-auto"/>
+				<img id="socraticaLogo" src={currentDoodle.src} alt="Socratica Logo" class="h-auto w-auto"/>
 			</div>
 			
 			
