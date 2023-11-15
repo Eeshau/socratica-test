@@ -5,7 +5,7 @@
 </script>
 
 <div class="flex flex-col h-screen justify-center bg-primary">
-    <div class="absolute top-5 left-10 w-10 h-10 bg-black rounded-full" />
+    <div class="absolute top-5 left-7 sm:left-10 w-10 h-10 bg-black rounded-full" />
     <div class="absolute top-5 right-5 flex flex-col space-y-2 items-end">
         <a href="/" class="bg-white md:bg-primary py-2 px-2.5 text-[10px] text-xs md:text-sm rounded-full border border-cool-grey hover:bg-cool-grey font-mono inline-flex items-center space-x-2">
             <img src={DarkHouse} alt="home" class="w-4 h-4 md:w-6 md:h-6" />
