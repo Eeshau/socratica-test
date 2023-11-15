@@ -97,8 +97,8 @@
 				<div class="pt-16 col-span-2">
 					<h3 class="text-[#FBF8EF] font-base text-sm  -tracking-[0.48px] leading-[20px] pb-4 font-mono">NEWSLETTER</h3>
 					<div class=" min-w-4/5 max-w-[400px] bg-[#2A2928] py-[8px] px-[10px] rounded-full flex justify-between">
-						<input bind:value={email} placeholder="email@gmail.com" class="bg-[#2A2928] -tracking-[0.48px] w-full outline-none pl-4 rounded-full text-[#FFFFFF] font-graphik"/>
-						<button type="submit" on:click={handleOnSubmit} class=" text-black py-[7px] px-[20px] bg-[#FBF8EF] rounded-[100px] text-base font-semibold font-normal hover:opacity-95">
+						<input bind:value={email} placeholder="email@gmail.com" class="bg-[#2A2928] text-[12px] md:text-base -tracking-[0.48px] w-full outline-none pl-4 rounded-full text-[#FFFFFF] font-graphik"/>
+						<button type="submit" on:click={handleOnSubmit} class=" text-black py-[7px] px-[20px] bg-[#FBF8EF] rounded-[100px] text-[12px] md:text-base font-semibold font-normal hover:opacity-95">
 							Submit
 						</button>
 					</div>
