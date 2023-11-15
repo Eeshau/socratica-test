@@ -130,7 +130,7 @@
 				WHAT WE ARE
 			</span>
 		</div>
-		<div class="flex flex-col justify-center items-center text-[18.5px] text-xl md:text-4xl font-tiempos-headline md:pt-8" style="font-weight: 300;">
+		<!-- <div class="flex flex-col justify-center items-center text-[18.5px] text-xl md:text-4xl font-tiempos-headline md:pt-8" style="font-weight: 300;">
 			<div class="flex items-center">
 			  <img src={RedCircle} alt="red circle" class="w-10 md:w-16 pr-2 pl-2 md:pr-4 md:pl-4">
 			  <div class="inline-block pb-2">A open <span class="border-dashed border-b-2" style="border-color: #CDC19F; border-width: 0 0 2px; border-image: repeating-linear-gradient(to right, #CDC19F, #CDC19F 5px, transparent 5px, transparent 10px) 1/1 0 round"> celebration <span class="italic">of</span> makers</span>, artists,</div>
@@ -146,7 +146,35 @@
 				<span style="background: linear-gradient(to right, #899248, #000000); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"><span class="italic">in</span>-between</span>
 			  </div>	  
 			</div>
-		</div>
+		</div> -->
+		<div class="flex flex-col justify-center items-center text-[18.5px] md:text-4xl font-tiempos-headline md:pt-8" style="font-weight: 300;">
+			<!-- Use whitespace-nowrap for very small screens and allow wrapping for larger screens -->
+			<div class="flex items-center whitespace-nowrap sm:whitespace-normal">
+			  <img src={RedCircle} alt="red circle" class="w-10 md:w-16 pr-2 pl-2 md:pr-4 md:pl-4">
+			  <div class="inline-block pb-2">
+				A open <span class="border-dashed border-b-2" style="border-color: #CDC19F; border-width: 0 0 2px; border-image: repeating-linear-gradient(to right, #CDC19F, #CDC19F 5px, transparent 5px, transparent 10px) 1/1 0 round"> celebration <span class="italic">of</span> makers</span>, artists,
+			  </div>
+			</div>
+			<div class="flex items-center whitespace-nowrap sm:whitespace-normal">
+			  <div class="inline-block pb-1">
+				<span class="font-glyphworld">e</span>ngineers, <span class="font-glyphworld">d</span>esigners, writers, <span class="font-glyphworld">p</span>oets,
+			  </div>
+			  <img src={GreenCircle} alt="green circle" class="w-10 md:w-16 pr-2 pl-2 md:pr-4 md:pl-4">
+			</div>
+			<div class="flex items-center whitespace-nowrap sm:whitespace-normal">
+			  <div class="inline-block">
+				and <span class="italic relative text-stone bottom-0 left-0 border-b-4" style="border-color: #CDC19F">everything</span>
+			  </div>
+			  <img src={YellowCircle} alt="yellow circle" class="w-10 md:w-16 pr-2 pl-2 md:pr-4 md:pl-4">
+			  <div class="inline-block  font-tiempos-headline">
+				<span style="background: linear-gradient(to right, #899248, #000000); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"><span class="italic">in</span>-between</span>
+			  </div>   
+			</div>
+		  </div>
+		  
+		  
+		  
+
 		<div class="flex items-center justify-center font-Graphik text-zinc-800 pt-5 md:pt-8 pb-40 px-12">
 			<div class="text-center text-[12px] md:text-sm">
 				<span class="block md:hidden">Socratica is a live IRL co-working session hosted every Sunday bringing together people who want to <span class="italic">make</span> stuff, and <a href="https://lu.ma/socratica" target="_blank" class="border-b-2" style="border-color: #706F6B; color: #706F6B;">you're invited</a>.</span>
