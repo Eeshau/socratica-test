@@ -147,7 +147,7 @@
 			  </div>	  
 			</div>
 		</div> -->
-		<div class="flex flex-col justify-center items-center text-[18.5px] md:text-4xl font-tiempos-headline md:pt-8" style="font-weight: 300;">
+		<div class="flex flex-col justify-center items-center text-[17.5px] md:text-4xl font-tiempos-headline md:pt-8" style="font-weight: 300;">
 			<!-- Use whitespace-nowrap for very small screens and allow wrapping for larger screens -->
 			<div class="flex items-center whitespace-nowrap sm:whitespace-normal">
 			  <img src={RedCircle} alt="red circle" class="w-10 md:w-16 pr-2 pl-2 md:pr-4 md:pl-4">
