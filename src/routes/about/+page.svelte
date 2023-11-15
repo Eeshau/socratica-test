@@ -25,7 +25,7 @@
         <h1 class="text-2xl font-tiempos-headline">Socratica</h1>
     </div>
 
-    <div class="absolute w-9/10 md:w-9/10 lg:w-3/5 mt-96 md:mt-32 pb-60 md:pb-0" style="left: 10%;">
+    <div class="absolute w-9/10 md:w-9/10 lg:w-3/5 mt-[500px] sm:mt-96 md:mt-32 pb-60 md:pb-0" style="left: 10%;">
         <h2 class="text-3xl md:text-5xl lg:text-6xl font-tiempos-headline">We’re in the business of helping good people do great things.</h2>
         
         <div class="mt-8 md:mt-16 italic" style="font-family: 'Untitled Sans', sans-serif; width: 80%;">

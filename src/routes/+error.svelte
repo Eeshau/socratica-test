@@ -49,8 +49,8 @@
     <img src={YellowGuy} alt="Yellow Character" class="absolute" style="top: 14%; left: 66%; transform: scale(0.5);" /> -->
 
     <img src={GreenGuy} alt="Green Character" class="absolute      top-[5%] right-[50%] transform scale-[0.27]      md:top-[5%] lg:left-[15%] md:transform-scale-[0.6]" />
-    <img src={OrangeGuy} alt="Orange Character" class="absolute   top-[7%] left-[10%] transform scale-[0.4]        md:top-[5%] lg:left-[43%] md:transform-scale-[0.6]" />
-    <img src={YellowGuy} alt="Yellow Character" class="absolute     top-[15%] left-[60%] transform scale-[0.4]   md:top-[14%] lg:left-[66%] md:transform-scale-50" />
+    <img src={OrangeGuy} alt="Orange Character" class="absolute   top-[5%] left-[10%] transform scale-[0.4]        md:top-[5%] lg:left-[43%] md:transform-scale-[0.6]" />
+    <img src={YellowGuy} alt="Yellow Character" class="absolute     top-[12%] left-[60%] transform scale-[0.4]   md:top-[14%] lg:left-[66%] md:transform-scale-50" />
 
     <!-- <img src={BlueGuy} alt="Blue Character" class="absolute" style="top: 45%; left: 15%; transform: scale(0.5);" />
     <img src={PurpleGuy} alt="Purple Character" class="absolute" style="top: 52%; left: 23%; transform: scale(0.55);" />
