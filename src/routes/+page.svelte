@@ -225,14 +225,14 @@
             <!-- This image will be hidden on small (mobile) and medium screens -->
 			<img src={JoinUs} alt="JoinUs" class="w-200 h-400 md:w-[792px] md:h-[476px] hidden md:inline-block">
         </div>
-        <div class="flex-grow pl-10 md:pl-20">
+        <div class="flex-grow pl-6 sm:pl-10 md:pl-20">
 			<div class="pl-4 pt-12">
 				<span class="px-4 py-2 md:px-6 md:py-3 border-2 rounded-full text-[10px] text-xs md:text-sm font-mono inline-block p-2" style="border-color: #758F2A; color: #758F2A;">
 					<img src={Scroll} alt="Scroll" class="w-4 h-4 md:w-6 md:h-6 inline-block" />
 					HOW IT WORKS
 				</span>
 			</div>
-            <div class="p-5 pr-10 md:pr-40 text-zinc-800">
+            <!-- <div class="p-5 pr-6 md:pr-10 md:pr-40 text-zinc-800">
                 <div class="text-xl xs:text-3xl sm:text-3xl md:text-4xl font-tiempos-headline md:pt-9" style="font-weight: 300;"> 
                     Introductions 👋,
                     <br/>two 50-min work blocks 🖋️️💻🎨,
@@ -240,9 +240,21 @@
                     <br/><span class="italic " style="color: #CFCCC4"> + snacks along the way.</span>
                 </div>
                 <div class="pt-5 text-[11px] sm:text-[14px] text-zinc-800 font-inter">Socratica is a live IRL co-working session hosted every Sunday bringing together people who want to make stuff, and you're invited</div>
-            </div>
+            </div> -->
+
+			<div class="p-5 pr-6 md:pr-10 lg:pr-40 text-zinc-800">
+					<div class="text-xl sm:text-3xl lg:text-4xl font-tiempos-headline lg:pt-9" style="font-weight: 300;">
+						Introductions 👋,
+						<br/>
+						<span class="md:hidden">two 50-min work blocks 🖋️️💻🎨, ending with casual open <span class="italic">demos</span> 🤝</span>
+						<span class="hidden md:inline">two 50-min work blocks 🖋️️💻🎨,</span>
+						<span class="hidden md:inline">ending with casual open <span class="italic">demos</span> 🤝</span>
+						<br class=""/>
+						<span class="italic " style="color: #CFCCC4">+ snacks along the way.</span>
+					</div>
+					<div class="pt-5 text-[11px] md:text-[14px] text-zinc-800 font-inter">Socratica is a live IRL co-working session hosted every Sunday bringing together people who want to make stuff, and you're invited</div>
+			</div>
         </div>
-		<!-- This image will be visible only on small screens and hidden on medium and larger screens -->
     </div>
 	<!-- <img src={JoinUs} alt="JoinUs" class="w-200 h-400 md:hidden sm:inline-block p-10 bg-primary"> -->
 	<img src={Polaroid} alt="Polaroid" class="mx-auto" style="width: 1200px; height: 1000;">
@@ -262,6 +274,7 @@
                 <div class="text-xl xs:text-3xl sm:text-3xl md:text-4xl text-zinc-800 font-light font-tiempos-headline pt-4 " style="font-weight: 300;"> 
                     We like helping good people do great things.
                     <div>Got an extra minute? 
+						<br/>
 						<a href="/about" class="border-b-2" style="border-color: #706F6B; color: #706F6B; text-decoration: none;">
 							We have more to say
 					  	</a>
