@@ -25,14 +25,14 @@
         <h1 class="text-2xl font-tiempos-headline">Socratica</h1>
     </div>
 
-    <div class="absolute w-9/10 md:w-9/10 lg:w-3/5 mt-[500px] sm:mt-96 md:mt-32 pb-60 md:pb-0" style="left: 10%;">
+    <div class="absolute w-9/10 md:w-9/10 lg:w-3/5 mt-[550px] sm:mt-96 md:mt-32 pb-60 md:pb-0" style="left: 10%;">
         <h2 class="text-3xl md:text-5xl lg:text-6xl font-tiempos-headline">We’re in the business of helping good people do great things.</h2>
         
         <div class="mt-8 md:mt-16 italic" style="font-family: 'Untitled Sans', sans-serif; width: 80%;">
-            <p class="text-sm md:text-[17px] lg:text-lg leading-relaxed mb-4">
+            <p class="text-[11px] md:text-[17px] lg:text-lg leading-relaxed mb-4">
                 Ah, dear Seekers of Productivity and Pursuers of Passion! Gather 'round, for I present to you a grandiloquent proclamation, an opus of eloquence, a magnum opus if you will, extolling the virtues of a hallowed sanctuary for the enlightened minds of our time - none other than the illustrious "Socratica"!
             </p>
-            <p class="text-sm md:text-[17px] lg:text-lg leading-relaxed mb-4">
+            <p class="text-[11px] md:text-[17px] lg:text-lg leading-relaxed mb-4">
                 In this hallowed hall of collaboration, where fervent flames of creativity dance merrily with the cool waters of contemplation, we offer unto you a resplendent oasis of productivity. Fear not, dear reader, for you are not alone in your quest to tame the unruly beasts of your passions! For here, amidst the congeniality of fellow enthusiasts, you shall find solace in the collective endeavour.
             </p>
         </div>
