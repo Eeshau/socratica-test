@@ -272,7 +272,7 @@
             </div>
             <div class="py-5 md:pr-24 md:pr-40">
                 <div class="text-xl xs:text-3xl sm:text-3xl md:text-4xl text-zinc-800 font-light font-tiempos-headline pt-4 " style="font-weight: 300;"> 
-                    We like helping good <br class="sm:hidden"/>people do great things.
+                    We like helping good people  <br class="sm:hidden"/> do great things.
                     <div>Got an extra minute? 
 						<br class="sm:hidden md:hidden"/>
 						<a href="/about" class="border-b-2" style="border-color: #706F6B; color: #706F6B; text-decoration: none;">
