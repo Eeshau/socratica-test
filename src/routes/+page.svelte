@@ -274,7 +274,7 @@
                 <div class="text-xl xs:text-3xl sm:text-3xl md:text-4xl text-zinc-800 font-light font-tiempos-headline pt-4 " style="font-weight: 300;"> 
                     We like helping good people do great things.
                     <div>Got an extra minute? 
-						<br/>
+						<br class="sm:hidden md:hidden"/>
 						<a href="/about" class="border-b-2" style="border-color: #706F6B; color: #706F6B; text-decoration: none;">
 							We have more to say
 					  	</a>
