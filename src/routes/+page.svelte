@@ -56,8 +56,8 @@
 </svelte:head>
 
 
-<section>
-	<div class="flex flex-col h-screen justify-center bg-primary">
+<section class="block">
+	<div class="flex flex-col h-[670px] sm:h-[800px] justify-center bg-primary">
 		<div class="absolute top-5 left-7 sm:left-10 w-10 h-10 bg-black rounded-full" />
 		<div class="absolute top-5 right-5 flex flex-col space-y-2 items-end">
 			<a href="/about" class="bg-white md:bg-primary py-2 px-2.5 text-[10px] text-xs md:text-sm rounded-full border border-cool-grey hover:bg-cool-grey font-mono inline-flex items-center space-x-2 ">
@@ -193,26 +193,26 @@
 
   
 
-  <section>
-	<div class="bg-primary pt-24 md:pt-40">
-		<div class=" pl-8 md:pl-20 lg:pl-40"> 
-			<span class="px-4 py-2 md:px-6 md:py-3 rounded-full border-2 text-[10px] text-xs md:text-sm font-mono inline-block p-2" style="border-color: #854F6F; color: #854F6F">
-				<img src={Alien} alt="Alien" class="w-4 h-4 md:w-6 md:h-6 inline-block" />
-			  WHO CAN COME
-			</span>
-		</div>
-		
-		<div class="pt-6 pl-8 md:pl-20 lg:pl-44  w-11/12 md:w-full"> 
-			<div class="text-[20px] text-xl xs:text-3xl sm:text-3xl md:text-4xl  font-tiempos-headline">Whether you're just starting out or far along, 
-				<br class="hidden md:block"/>this is a place for <i>you</i>
-			</div> 
-			<div class="font-Graphik pt-2 md:pt-6 text-[11px] sm:text-[14px] sm:text-md">
-				We know it can be intimidating to start
-				<br/>(we've been there).
+  <section class="block">
+		<div class="bg-primary pt-24 md:pt-40">
+			<div class=" pl-8 md:pl-20 lg:pl-40"> 
+				<span class="px-4 py-2 md:px-6 md:py-3 rounded-full border-2 text-[10px] text-xs md:text-sm font-mono inline-block p-2" style="border-color: #854F6F; color: #854F6F">
+					<img src={Alien} alt="Alien" class="w-4 h-4 md:w-6 md:h-6 inline-block" />
+				WHO CAN COME
+				</span>
 			</div>
+			
+			<div class="pt-6 pl-8 md:pl-20 lg:pl-44  w-11/12 md:w-full"> 
+				<div class="text-[20px] text-xl xs:text-3xl sm:text-3xl md:text-4xl  font-tiempos-headline">Whether you're just starting out or far along, 
+					<br class="hidden md:block"/>this is a place for <i>you</i>
+				</div> 
+				<div class="font-Graphik pt-2 md:pt-6 text-[11px] sm:text-[14px] sm:text-md">
+					We know it can be intimidating to start
+					<br/>(we've been there).
+				</div>
+			</div>
+			<img src={WhoCanCome} alt="Who Can Come" class="-mt-18 sm:-mt-32 md:-mt-36 lg:-mt-80">
 		</div>
-		<img src={WhoCanCome} alt="Who Can Come" class="-mt-18 sm:-mt-32 md:-mt-36 lg:-mt-80">
-	</div>
   </section>
 
 
