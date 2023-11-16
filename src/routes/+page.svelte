@@ -195,14 +195,14 @@
 
   <section>
 	<div class="bg-primary pt-24 md:pt-40">
-		<div class=" md:pl-20 lg:pl-40 pl-14"> 
+		<div class=" pl-8 md:pl-20 lg:pl-40"> 
 			<span class="px-4 py-2 md:px-6 md:py-3 rounded-full border-2 text-[10px] text-xs md:text-sm font-mono inline-block p-2" style="border-color: #854F6F; color: #854F6F">
 				<img src={Alien} alt="Alien" class="w-4 h-4 md:w-6 md:h-6 inline-block" />
 			  WHO CAN COME
 			</span>
 		</div>
 		
-		<div class="pt-6 md:pl-20 lg:pl-44 pl-14 w-11/12 md:w-full"> 
+		<div class="pt-6 pl-8 md:pl-20 lg:pl-44  w-11/12 md:w-full"> 
 			<div class="text-[20px] text-xl xs:text-3xl sm:text-3xl md:text-4xl  font-tiempos-headline">Whether you're just starting out or far along, 
 				<br class="hidden md:block"/>this is a place for <i>you</i>
 			</div> 
@@ -262,15 +262,15 @@
 
 
 <section>
-	<div class="flex bg-primary pb-40 md:pl-16 lg:pl-20 pl-8 bg-cover bg-center bg-no-repeat" style="background-image: url({BackgroundLines2})">
+	<div class="flex bg-primary pb-40 pl-8 md:pl-16 lg:pl-20 bg-cover bg-center bg-no-repeat" style="background-image: url({BackgroundLines2})">
         <div class="flex-grow md:pl-16 lg:pl-20">
-            <div class="pl-4 pt-14">
+            <div class="pt-14">
                 <span class="px-6 py-3 border-2 rounded-full text-[10.5px] text-xs md:text-sm font-mono inline-block p-2" style="border-color: #2C64B7; color: #2C64B7;">
                     <img src={Smiley} alt="Smiley" class="w-4 h-4 md:w-6 md:h-6 inline-block" />
                     WHY WE DO WHAT WE DO
                 </span>
             </div>
-            <div class="p-5 pr-8 md:pr-24 md:pr-40">
+            <div class="py-5 md:pr-24 md:pr-40">
                 <div class="text-xl xs:text-3xl sm:text-3xl md:text-4xl text-zinc-800 font-light font-tiempos-headline pt-4 " style="font-weight: 300;"> 
                     We like helping good people do great things.
                     <div>Got an extra minute? 
