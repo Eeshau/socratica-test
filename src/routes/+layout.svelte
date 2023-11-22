@@ -6,15 +6,18 @@
 	import eigenspace_logo from '$lib/images/eigenspace_logo.svg';
 	import { initializeApp } from "firebase/app";
 	import { getAnalytics } from "firebase/analytics";
-	
+	import { getFirestore, collection, getDocs, addDoc } from "firebase/firestore";
 	import { onMount } from 'svelte';
 	let currentPath = '';
+
+	let db;
 	onMount(() => {
 
 		const firebaseConfig = {
 			apiKey: import.meta.env.VITE_API_KEY,
 			authDomain: import.meta.env.VITE_AUTH_DOMAIN,
-			projectId: import.meta.env.VITE_PROJECT_ID,
+			databaseURL: import.meta.env.VIT_DATABASE_URL,
+			projectId: import.meta.env.VITE_PROJECT_ID,   
 			storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
 			messagingSenderId: import.meta.env.VITE_MESSAGING_SENDER_ID,
 			appId: import.meta.env.VITE_APP_ID,
@@ -22,6 +25,7 @@
 		};
 		const app = initializeApp(firebaseConfig);
     	const analytics = getAnalytics(app);
+		db = getFirestore(app); //////
 
 		currentPath = window.location.pathname;
 
@@ -29,7 +33,8 @@
   
 	let email = '';
 	let emailValidationMessage = ''; // Feedback message
-  
+
+
 	/**
      * @param {string} email
      */
@@ -41,16 +46,49 @@
 	/**
      * @param {{ preventDefault: () => void; }} event
      */
-	function handleOnSubmit(event: any) {
+	async function handleOnSubmit(event: any) {
 		event.preventDefault(); // prevent the form from submitting
 		if (isValidEmail(email)) {
 			console.log("Valid Email:", email);
 			emailValidationMessage = ''; // Clear any previous error messages
+
+			// Check if the email already exists in Firestore
+			const emailsRef = collection(db, "emails");
+			const querySnapshot = await getDocs(emailsRef);
+			let emailExists = false;
+
+			querySnapshot.forEach((doc) => {
+				if (doc.data().email === email) {
+					emailExists = true;
+				}
+			});
+
+			// Add email to Firestore if it doesn't exist
+			if (!emailExists) {
+				try {
+					const docRef = await addDoc(emailsRef, {
+						email: email
+					});
+					console.log("Document written with ID: ", docRef.id);
+					emailValidationMessage = 'Email successfully added!';
+					email = '';
+				} catch (e) {
+					console.error("Error adding document: ", e);
+					emailValidationMessage = 'Error adding email. Please try again.';
+				}
+			} else {
+				console.log("Email already exists: ", email);
+				emailValidationMessage = 'This email already exists in our records.';
+			}
 		} else {
 			console.log("Invalid Email:", email);
 			emailValidationMessage = 'Please enter a valid email';
 		}
 	}
+
+
+
+
   </script>
   
   
@@ -98,7 +136,7 @@
 					<h3 class="text-[#FBF8EF] font-base text-sm  -tracking-[0.48px] leading-[20px] pb-4 font-mono">NEWSLETTER</h3>
 					<div class=" min-w-4/5 max-w-[400px] bg-[#2A2928] py-[8px] px-[10px] rounded-full flex justify-between">
 						<input bind:value={email} placeholder="email@gmail.com" class="bg-[#2A2928] text-[12px] md:text-base -tracking-[0.48px] w-full outline-none pl-4 rounded-full text-[#FFFFFF] font-graphik"/>
-						<button type="submit" on:click={handleOnSubmit} class=" text-black py-[7px] px-[20px] bg-[#FBF8EF] rounded-[100px] text-[12px] md:text-base font-semibold font-normal hover:opacity-95">
+						<button type="submit" on:click={handleOnSubmit} class=" text-black py-[7px] px-[20px] bg-[#FBF8EF] rounded-[100px] text-[12px] md:text-base font-semibold font-normal hover:opacity-95 transition-colors duration-500 ease-in-out">
 							Submit
 						</button>
 					</div>
