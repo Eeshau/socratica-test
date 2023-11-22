@@ -118,7 +118,7 @@
     <div>
         <div>
             <div class="flex flex-col items-center absolute w-full" style="top: 40%;">
-                <h2 class="text-4xl -mt-8 sm:-mt-0 sm:mt-5 sm:text-5xl md:text-5xl font-tiempos-headline z-10">Get Involved</h2>
+                <h2 class="text-4xl -mt-4 sm:-mt-0 sm:mt-5 sm:text-5xl md:text-5xl font-tiempos-headline z-10">Get Involved</h2>
             </div>
             <form class="flex flex-col items-center mt-40" on:submit={handleOnSubmit}>
                 <input type="email" bind:value={email} name="email" placeholder="Your Email" required class="p-2 mb-4 border rounded outline-none" />
