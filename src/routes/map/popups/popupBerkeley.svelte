@@ -1,14 +1,14 @@
-<div id="vancouver-popup" class="hidden p-8 flex flex-col items-center justify-center" style="border: 1px solid gray;">
+<div id="berkeley-popup" class="hidden p-8 flex flex-col items-center justify-center" style="border: 1px solid gray;">
     <div class="w-full md:w-1/2 text-left mt-4">
-        <h1 class="text-4xl text-black font-tiempos-headline">Atelier Vancouver</h1>
+        <h1 class="text-4xl text-black font-tiempos-headline">Side Project Sundays Berkeley</h1>
         <div class="-mt-2">
             <p class="text-black font-mono" style="font-size: 16px; color: black;">Since Sept 2023</p>
         </div>
     </div>
 
     <iframe
-        title="Atelier Vancouver"
-        src="https://lu.ma/embed/calendar/cal-CvuDnsONPxinxqk/events?lt=light"
+        title="Side Project Sundays Berkeley"
+        src="https://lu.ma/embed/calendar/cal-CRtUehgIQHLEB3o/events?lt=light"
         width="350"
         height="450"
         frameborder="0"
@@ -16,5 +16,3 @@
         aria-hidden="false"
     ></iframe>
 </div>
-
-

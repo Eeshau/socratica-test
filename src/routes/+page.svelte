@@ -1,10 +1,9 @@
 <script lang="ts">
 	import doodle1 from '$lib/images/socratica-doodle.png';
 	import doodle2 from '$lib/images/socratica-doodle-alt.png';
+	import doodle3 from '$lib/images/socratica-doodle-3.png';
+	import doodle4 from '$lib/images/socratica-doodle-4.png';
 	import people from '$lib/images/socratica-people.png';
-	import UsersThree from '$lib/images/UsersThree.png';
-	import MapTrifold from '$lib/images/MapTrifold.png';
-	import Eye from '$lib/images/Eye.png';
 	import ArrowDownRight from '$lib/images/ArrowDownRight.png';
 	import Spiral from '$lib/images/Spiral.png';
 	import BackgroundLines from '$lib/images/BackgroundLines.png';
@@ -18,7 +17,8 @@
 	import Scroll from '$lib/images/Scroll.png';
 	import JoinUs from '$lib/images/JoinUs.png';
 	import Smiley from '$lib/images/Smiley.png';
-		import Polaroid from '$lib/images/Polaroid.png';
+	import Polaroid from '$lib/images/Polaroid.png';
+	import Navbar from '$lib/components/navbar.svelte';
 
 	const doodles = [
     {
@@ -29,6 +29,10 @@
         src: doodle2,
         title: '"Project Block", by Someone'
     },
+	{
+		src: doodle4,
+		title: '"Socratica", by Someone'
+	}
 	];
 
 	let randomIndex = Math.floor(Math.random() * doodles.length);
@@ -52,49 +56,33 @@
 
 <svelte:head>
 	<title>Socratica</title>
-	<meta name="description" content="We host weekly co-working sessions so that you can work on your passion projects with likeminded people." />
+	<meta name="description" content="We host weekly co-working sessions for you to work on your passion projects with likeminded people." />
 </svelte:head>
 
 
 <section class="block">
 	<div class="flex flex-col h-[670px] sm:h-[800px] justify-center bg-primary">
 		<div class="absolute top-5 left-7 sm:left-10 w-10 h-10 bg-black rounded-full" />
-		<div class="absolute top-5 right-5 flex flex-col space-y-2 items-end">
-			<a href="/about" class="bg-white md:bg-primary py-2 px-2.5 text-[10px] text-xs md:text-sm rounded-full border border-cool-grey hover:bg-cool-grey font-mono inline-flex items-center space-x-2 transition-colors duration-500 ease-in-out">
-				<img src={UsersThree} alt="Users" class="w-4 h-4 md:w-6 md:h-6" />
-				<span>ABOUT</span>
-			</a>
-			<a href="/map" class="bg-white md:bg-primary py-2 px-2.5  text-[10px] text-xs md:text-sm rounded-full border border-cool-grey hover:bg-cool-grey font-mono inline-flex items-center space-x-2 transition-colors duration-500 ease-in-out">
-				<img src={MapTrifold} alt="Map" class="w-4 h-4 md:w-6 md:h-6" />
-				<span>MAP</span>
-			</a>
-			<a href="/get-involved" class="bg-white md:bg-primary py-2 px-2.5  text-[10px] text-xs md:text-sm rounded-full border border-cool-grey hover:bg-cool-grey font-mono inline-flex items-center space-x-2 transition-colors duration-500 ease-in-out">
-				<img src={Eye} alt="Eye" class="w-4 h-4 md:w-6 md:h-6" />
-				<span>GET INVOLVED</span>
-			</a>
-		</div>
-		
-		
+		<Navbar />
+
 		<div class="absolute top-5 left-1/2 transform -translate-x-1/2">
-        <a href="/">
-            <h1 class="text-2xl font-tiempos-headline">Socratica</h1>
-        </a>
+      <h1 class="text-2xl font-tiempos-headline">Socratica</h1>
 		</div>
 		
 		
 		<div class="container mx-auto max-w-screen-xl px-6 md:px-8">
 
-			<div class="flex flex-col items-center mb-8 relative lg:h-[250px]  mt-0 md:mt-16">
+			<div class="flex flex-col items-center relative lg:h-[250px] mt-0 md:mt-16">
 				<button on:click={switchDoodle} class="absolute inset-0 opacity-0 cursor-pointer"></button>
-				<img id="socraticaLogo" src={currentDoodle.src} alt="Socratica Logo" class="h-auto w-auto"/>
-			</div>
+				<img id="socraticaLogo" src={currentDoodle.src} alt="Socratica Logo" class="h-[200px] w-auto object-contain"/>
+			</div>			
 			
 			
-			<div class="flex space-x-4 mt-8">
+			<div class="flex space-x-4 mt-0 md:mb-12">
 				<div class="w-4/6 md:w-1/2">
 					<p class="text-md sm:text-xl lg:text-3xl font-tiempos-headline text-[#41403F]">
 						We host weekly <span class="border-dashed border-b-2" style="border-color: #41403F; border-width: 0 0 2px; border-image: repeating-linear-gradient(to right, #41403F, #41403F 5px, transparent 5px, transparent 10px) 1/1 0 round">co-working sessions</span>
-						so that you can work on your <span class="italic">passion projects</span> with likeminded people.
+						for you to work on your <span class="italic">passion projects</span> with likeminded people.
 					</p>
 					<div class="mt-4">
 						<a href="/map" target="_blank" rel="noopener noreferrer">
@@ -119,7 +107,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="-mt-32">
+	<div class="-mt-28">
 		<img src={people} alt="People at Socratica" class="w-full  min-h-40" />
 	</div>
 </section>
@@ -181,7 +169,7 @@
 			<div class="text-center text-[12px] md:text-sm">
 				<span class="block md:hidden">Socratica is a live IRL co-working session hosted every Sunday bringing together people who want to <span class="italic">make</span> stuff, and <a href="https://lu.ma/socratica" target="_blank" class="border-b-2" style="border-color: #706F6B; color: #706F6B;">you're invited</a>.</span>
 				<div class="hidden md:block">Socratica is a live IRL co-working session hosted every Sunday bringing together people who want to</div>
-				<div class="hidden md:block mx-auto"><span class="italic">make</span> stuff, and <a href="https://lu.ma/socratica" target="_blank" class="border-b-2" style="border-color: #706F6B; color: #706F6B;">you're invited</a>.</div>
+				<div class="hidden md:block mx-auto"><span class="italic">make</span> stuff, and <a href="/map" class="border-b-2" style="border-color: #706F6B; color: #706F6B;">you're invited</a>.</div>
 			</div>
 		</div>
 		
@@ -197,14 +185,14 @@
 
   <section class="block">
 		<div class="bg-primary pt-24 md:pt-40">
-			<div class=" pl-8 md:pl-20 lg:pl-40"> 
+			<div class=" pl-8 md:pl-20 lg:pl-44"> 
 				<span class="px-4 py-2 md:px-6 md:py-3 rounded-full border-2 text-[10px] text-xs md:text-sm font-mono inline-block p-2" style="border-color: #854F6F; color: #854F6F">
 					<img src={Alien} alt="Alien" class="w-4 h-4 md:w-6 md:h-6 inline-block" />
 				WHO CAN COME
 				</span>
 			</div>
 			
-			<div class="pt-6 pl-8 md:pl-20 lg:pl-44  w-11/12 md:w-full"> 
+			<div class="pt-6 pl-8 md:pl-20 lg:pl-44 w-11/12 md:w-full"> 
 				<div class="text-[20px] text-xl xs:text-3xl sm:text-3xl md:text-4xl  font-tiempos-headline">Whether you're just starting out or far along, 
 					<br class="hidden md:block"/>this is a place for <i>you</i>
 				</div> 
